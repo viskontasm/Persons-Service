@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+
+persons-ng/node_modules

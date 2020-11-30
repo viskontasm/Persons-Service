@@ -1,0 +1,10 @@
+<header>
+  <title>{{title}}</title>
+  <h1>Welcome to Persons App</h1>
+</header>
+<body>
+  <input #searchField matInput type="text" name="searchField" placeholder="Enter personal id or birthday(YYYY-MM-DD)">
+  <button (click)="searchCustomers(searchField.value)">Search</button>
+
+  <app-table [persons]="persons"></app-table>
+</body>

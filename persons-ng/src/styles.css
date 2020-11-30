@@ -1,0 +1,18 @@
+body, h1 {
+  text-align: center;
+  color: darkgreen;
+}
+input {
+  width: 30%
+}
+
+.mid {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}

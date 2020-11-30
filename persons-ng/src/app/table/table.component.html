@@ -1,0 +1,19 @@
+<div class="mid" *ngIf="!persons || persons.length === 0">
+  No persons to show
+</div>
+<table id="persoonsTable" class="mid" *ngIf="persons && persons.length > 0">
+    <tr>
+      <td><h2>Personal id</h2></td>
+      <td><h2>Name</h2></td>
+      <td><h2>Gender</h2></td>
+      <td><h2>Birth day</h2></td>
+    </tr>
+    <ng-container *ngFor="let person of persons">
+        <tr>
+          <td>{{person.personalId}}</td>
+          <td>{{person.firstName + ' ' + person.lastName}}</td>
+          <td>{{person.gender}}</td>
+          <td>{{person.birthDay}}</td>
+        </tr>
+    </ng-container>
+</table>
