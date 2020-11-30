@@ -21,6 +21,9 @@ public class PersonController {
     public List<Person> getPersonByPersonalIdOrBirthDay(@PathVariable String value) {
         log.info("Person searched with input value {}", value);
         List<Person> persons = repository.getPersonByPersonalIdOrBirthDay(value, value);
+        if (persons.isEmpty()) {
+            log.error("No persons found with input value {}", value);
+        }
         return persons;
     }
 }
